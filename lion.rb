@@ -1,5 +1,6 @@
 require_relative "animal"
 
+# class Child < Parent
 class Lion < Animal
     def talk
         super + " roars"

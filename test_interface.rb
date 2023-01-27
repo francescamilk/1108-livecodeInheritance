@@ -8,12 +8,15 @@ timon = Meerkat.new("timon")
 pumba = Warthog.new("pumba")
 
 animals = [simba, nala, timon, pumba]
-animals.each {|animal| animal.talk} 
+animals.each {|animal| puts animal.talk} 
 
-Animal::savannaphila
 
 puts timon.eat("scorpion")
 puts simba.eat("gazelle")
+
+# ::savannaphila is a module of the Animal Class
+savannah_animals = Animal::savannaphila
+p savannah_animals
 
 # #{} #{}
 # Simba roars

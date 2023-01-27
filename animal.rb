@@ -1,4 +1,3 @@
-
 class Animal
     SAVANNAH_PHILA = ["Lion", "Meerkat", "Warthog"]
     ICELAND_PHILA  = ["Penguin", "Bear"]
@@ -13,6 +12,7 @@ class Animal
         SAVANNAH_PHILA
     end
 
+    ### WOULD WORK IN RAILS - Doesn't here as we have to require_relative on two sides
     # def talk
     #     case self.class
     #     when Lion then "#{@name} roars"
@@ -20,6 +20,7 @@ class Animal
     #     when Warthog then "#{@name} grunt"
     #     end
     # end
+    
     def talk
         @name.capitalize
     end
